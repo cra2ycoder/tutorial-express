@@ -11,9 +11,14 @@ server.get('/random.text', (request, response) => {
   response.send('random.text')
 })
 
-// we will get reponse for `acd` and `abcd`
+// we will get response for `acd` and `abcd`
 server.get('/ab?cd', (request, response) => {
   response.send('ab?cd')
+})
+
+server.get('/books/:bookName/:bookId', (request, response) => {
+  console.log(request.params)
+  response.send(request.params)
 })
 
 server.listen(PORT, () => {

@@ -12,3 +12,16 @@
 | /ab(cd)?e    | /abe and /abcde                             |
 | /a/          | will match anything with an “a” in it.      |
 | /.\*fly\$/   | butterfly, dragonfly, so on.                |
+
+---
+
+## Route parameters
+
+- we can use `:` in the path to work as url varaibles/path parameters
+- see below example
+
+```
+Route path: /users/:userId/books/:bookId
+Request URL: http://localhost:3000/users/34/books/8989
+req.params: { "userId": "34", "bookId": "8989" }
+```
