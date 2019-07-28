@@ -18,11 +18,20 @@ const server = express()
  */
 const PORT = 3000
 
+/**
+ * @note
+ * requesting express server to handle routing for the following path `/`
+ *
+ */
 server.get('/', (request, response) => {
   console.log({ request, response })
   response.send('home page!')
 })
 
+/**
+ * @note
+ * requesting express server to start and listen our app
+ */
 server.listen(PORT, () => {
   console.log(`Server is listening to ${PORT}`)
 })
