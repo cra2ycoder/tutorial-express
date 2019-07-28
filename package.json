@@ -4,7 +4,9 @@
   "description": "A basic dev config setup for re-usable javascript project",
   "main": "index.js",
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "express": "4.17.1"
+  },
   "devDependencies": {
     "prettier": "1.17.1",
     "eslint": "5.16.0",
