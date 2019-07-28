@@ -1,11 +1,21 @@
-# js-base-dev-setup
+# tutorial-express
 
-Javascript base setup with configuration (prettier + eslint + gitignore + vscode settings + editorconfig)
+## installation
 
-- its just base project configuration setup
-- every javascript project requires this for startup
+```s
+npm install express --save
+npm install @types/express --save-dev
+```
 
-**Notes:**
+or in the `package.json` file, add the following config and hit `yarn install`
 
-- has only the base configuration like linting, code format and vscode settings for developer friendly
-- No more transpiler / compiler are inbuilt with this one
+```js
+"dependencies": {
+    "express": "4.17.1"
+}
+"dependencies": {
+    "@types/express": "4.17.0"
+}
+```
+
+## creating a server
