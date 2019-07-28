@@ -1,6 +1,9 @@
 {
+  "editor.fontFamily": "'Dank Mono', 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 15,
+
   "editor.formatOnSave": true,
-  "editor.formatOnSaveTimeout": 300,
+  "editor.formatOnSaveTimeout": 100,
 
   "prettier.eslintIntegration": false,
   "prettier.tslintIntegration": false,
@@ -17,6 +20,9 @@
     "editor.formatOnSave": true
   },
 
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -24,16 +30,22 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     // "**/**.md": true,
-    // "**/.prettierrc": true,
-    // "**/.gitignore": true,
-    "**/node_modules": true
+    "**/.prettierrc": true,
+    "**/.gitignore": true,
+    "**/node_modules": true,
+    // "**/.babelrc": true,
+    "**/.editorconfig": true
+    // "**/.eslintrc.json": true,
   },
 
   "search.exclude": {
     "**/node_modules": true,
     ".prettierrc": true,
     "**/*.md": true,
-    "**/.gitignore": true
+    "**/.gitignore": true,
+    "**/.babelrc": true,
+    "**/.editorconfig": true,
+    "**/.eslintrc.json": true
   },
 
   "files.watcherExclude": {
@@ -41,6 +53,9 @@
     "**/.git/subtree-cache/**": true,
     "**/node_modules/**": true,
     "**/.gitignore": true,
-    "**/yarn.lock": true
+    "**/yarn.lock": true,
+    "**/.babelrc": true,
+    "**/.editorconfig": true,
+    "**/.eslintrc.json": true
   }
 }
